@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "ddcfc8f0-aa25-4050-bd8d-c9e50931ecab",
+		"name": "pushNotification",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23473658"
+	},
+	"item": [
+		{
+			"name": "new sendPush",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"connection": true,
+					"accept-encoding": true,
+					"user-agent": true,
+					"accept": true,
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer AAAAzTA0xdU:APA91bGMyCmAT5SfPslKSA0HAGbuev-1RNLbq8jsbMXT7EtIhrJVUufE94G9_vMRoF2EFoCupRVIIC1UysZfmnP-ctf4qITrsYF0tsDsIS48cfu-7sX6OXL7eWiNc3QkfPvZzxE-Cyzm",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"priority\" : \"high\",\n    \"to\" : \"c9GMGf3QQ0YFtJ0WlCRTme:APA91bFYsOmFmTBQckn_J4CPCzGuGfBKAwZeP2pkCS4G-bv4TWl4OfEqIGqBuK2Ke-c_7-N9HU6ICYVBegEv0ThFwetZqc9Kl-eMmnDrocsvoDot9xcYKD4t401TU8mTWry5UKUC3Eys\",\n    \"mutable_content\" : true,\n    \"content_available\" : true,\n   \"data\" : {\n        \"content\": {\n            \"id\": 100,\n            \"channelKey\": \"basic_channel\",\n            \"title\": \"Iraaaaaa!\\nThe eagle has landed!\",\n            \"body\": \"A small step for a man, but a giant leap to Flutter's community!\",\n            \"notificationLayout\": \"BigPicture\",\n            \"largeIcon\": \"https://media.fstatic.com/kdNpUx4VBicwDuRBnhBrNmVsaKU=/full-fit-in/290x478/media/artists/avatar/2013/08/neil-i-armstrong_a39978.jpeg\",\n            \"bigPicture\": \"https://www.dw.com/image/49519617_303.jpg\",\n            \"showWhen\": true\n        },\n        \"actionButtons\": [\n            {\n                \"key\": \"REPLY\",\n                \"label\": \"Reply\",\n                \"autoDismissible\": true,\n                \"buttonType\":  \"InputField\"\n            },\n            {\n                \"key\": \"ARCHIVE\",\n                \"label\": \"Archive\",\n                \"autoDismissible\": true\n            }\n        ]\n    }}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fcm.googleapis.com/fcm/send",
+					"protocol": "https",
+					"host": [
+						"fcm",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"fcm",
+						"send"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "old sendPush",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"connection": true,
+					"accept-encoding": true,
+					"user-agent": true,
+					"accept": true,
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "key=AAAAsjKo2kU:APA91bG6j2a5q0UU_IxmTodLENmK7EofhR48tee7nsKSbWp0jbaYbfOkBQLrgT-4hXkaIRXxrTnL_ginqXdWQD0ZiEQfRZ7MtoGvuKnjNKEHw5pRZfFZKV-jzcN0kLFzyJfS0Nvb4Pda",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"to\":\"eO4PuzKBQ1WnEwvkKS3Czg:APA91bFCKnlrNboZptnRelfiXVH6aLPb1jsm6OqpejF6Eoadndr7LycdP0dtqavKtK1Bl8ApHEmE8bPeMuZ54HLQPvej-P2J4V4cFPMvKN7jWTGqdEqqa6Hx-o3R3U6lWoq8E6wclEGL\", \"notification\": {\"body\": \"you have a new Ride.\", \"title\": \"New Ride Request\"}, \"priority\": \"high\",\"data\": {\"click_action\": \"FLUTTER_NOTIFICATION_CLICK\", \"id\": \"1\", \"status\": \"done\"}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fcm.googleapis.com/fcm/send",
+					"protocol": "https",
+					"host": [
+						"fcm",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"fcm",
+						"send"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "old sendPush Copy",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"connection": true,
+					"accept-encoding": true,
+					"user-agent": true,
+					"accept": true,
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "key=AAAAsjKo2kU:APA91bG6j2a5q0UU_IxmTodLENmK7EofhR48tee7nsKSbWp0jbaYbfOkBQLrgT-4hXkaIRXxrTnL_ginqXdWQD0ZiEQfRZ7MtoGvuKnjNKEHw5pRZfFZKV-jzcN0kLFzyJfS0Nvb4Pda",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"to\":\"duxKuOvLSZee5aOMtXtkr-:APA91bHstXPj_vWyut1FeGXiQ4CUlx6BsNmusoK--Cen8no0YBTwZGdplQ3uOXIkzwVo0vcZj9xwkVW1iAzcICAJwq8Ul3wf8Ln3HEo66bbNQUMsmxTqdeI42Skqo6UnlYIXu1HgQb_h\", \"notification\": {\"body\": \"you have a new Ride.\", \"title\": \"New Ride Request\"},\"data\": {\"orderId\": \"d3aca19c-36ba-432b-83cb-12989cb7a244\"}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fcm.googleapis.com/fcm/send",
+					"protocol": "https",
+					"host": [
+						"fcm",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"fcm",
+						"send"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
