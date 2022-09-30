@@ -73,9 +73,6 @@ void main() async {
 
       log('\x1B[32mMessage notification: ${message.notification?.body}');
       log(' \x1B[36m----------->Message data  : ${message.data}');
-      log('\x1B[32m ----------->Message data  content: ${message.data['content']}');
-      log(' \x1B[36m----------->Message data  shedule: ${message.data['schedule']}');
-      log('\x1B[32m----------->Message data  action buttons: ${message.data['actionButtons']}');
       AwesomeNotifications().createNotificationFromJsonData(message.data);
     }
 
@@ -90,8 +87,7 @@ void main() async {
     if (kDebugMode) {
       print("Handling a background message: ${message.messageId}");
       print('Message data: ${message.data}');
-      print('Message notification: ${message.notification?.title}');
-      print('Message notification: ${message.notification?.body}');
+    
     }
   }
 
