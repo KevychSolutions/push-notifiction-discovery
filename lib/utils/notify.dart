@@ -1,6 +1,6 @@
 import 'package:awesome_notifications/awesome_notifications.dart';
-import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
+
 
 void notify() async {
   String timezone = await AwesomeNotifications().getLocalTimeZoneIdentifier();
@@ -27,8 +27,12 @@ void notify() async {
     notificationLayout: NotificationLayout.BigPicture,
     bigPicture:
         'https://images.freeimages.com/images/previews/b0e/reggie-side-profile-1547758.jpg',
-  ));
+  )
+     
+      );
 }
+
+
 
 Future<void> cancel() async {
   await AwesomeNotifications().cancelAllSchedules();
